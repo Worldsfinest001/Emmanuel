@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Oladokun · Frontend Developer</title>
+    <meta name="description" content="Frontend Developer specializing in clean, responsive websites with modern JavaScript and React. 3+ years of experience building user-friendly interfaces.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="loading-spinner"></div>
+                <span>EO</span>
+            </div>
+            <p class="loading-text">Loading Experience</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">
+                <div class="brand-mark"></div>
+                <span class="brand-text">Emmanuel</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link nav-cta">Let's Talk</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <div class="theme-icon">
+                        <i class='bx bx-sun'></i>
+                        <i class='bx bx-moon'></i>
+                    </div>
+                </button>
+                
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">Frontend Developer</span>
+                    <div class="badge-dot"></div>
+                </div>
+                
+                <h1 class="hero-title">
+                    Building Clean, Responsive
+                    <span class="title-highlight">Web Experiences</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    I'm a Frontend Developer with 5+ years of experience specializing in modern JavaScript, React, and creating user-friendly interfaces. I focus on clean code, responsive design, and delightful user experiences.
+                </p>
+                
+                <div class="hero-skills">
+                    <div class="skills-column">
+                        <div class="skill-tag">
+                            <i class='bx bx-check'></i>
+                            <span>React & Next.js</span>
+                        </div>
+                        <div class="skill-tag">
+                            <i class='bx bx-check'></i>
+                            <span>Modern JavaScript</span>
+                        </div>
+                        <div class="skill-tag">
+                            <i class='bx bx-check'></i>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                    <div class="skills-column">
+                        <div class="skill-tag">
+                            <i class='bx bx-check'></i>
+                            <span>UI/UX Principles</span>
+                        </div>
+                        <div class="skill-tag">
+                            <i class='bx bx-check'></i>
+                            <span>Performance</span>
+                        </div>
+                        <div class="skill-tag">
+                            <i class='bx bx-check'></i>
+                            <span>Clean Code</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <i class='bx bx-code-alt'></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get in Touch</span>
+                        <i class='bx bx-message-dots'></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="profile-picture">
+                    <!-- Profile Image - Replace the background-image URL with your photo -->
+                    <div class="profile-image" style="background-image: url('Myimage.jpg');">
+                        <!-- Fallback content (shown if image fails to load) -->
+                        <div class="profile-fallback">
+                            <i class='bx bx-user'></i>
+                            <span>Emmanuel Oladokun</span>
+                        </div>
+                    </div>
+                    <div class="picture-frame">
+                        <div class="frame-corner top-left"></div>
+                        <div class="frame-corner top-right"></div>
+                        <div class="frame-corner bottom-left"></div>
+                        <div class="frame-corner bottom-right"></div>
+                    </div>
+                </div>
+                
+                <div class="floating-shapes">
+                    <div class="shape shape-1">
+                        <i class='bx bx-desktop'></i>
+                        <span>Responsive</span>
+                    </div>
+                    <div class="shape shape-2">
+                        <i class='bx bx-code-alt'></i>
+                        <span>Clean Code</span>
+                    </div>
+                    <div class="shape shape-3">
+                        <i class='bx bx-rocket'></i>
+                        <span>5+ Years</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="about-content">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Frontend-focused developer passionate about building beautiful, functional web experiences</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I specialize in transforming designs into fully functional, responsive websites that provide excellent user experiences. My focus is on writing clean, maintainable code and ensuring every pixel looks perfect across all devices.
+                        </p>
+                        <p>
+                            I believe great frontend development is about more than just writing code—it's about creating intuitive interfaces that users love to interact with.
+                        </p>
+                    </div>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class='bx bx-devices'></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>Mobile-First</h3>
+                                <p>Responsive designs that work flawlessly on all screen sizes</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class='bx bx-timer'></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>Performance</h3>
+                                <p>Fast-loading websites with optimized assets and code</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class='bx bx-palette'></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>UI/UX Focus</h3>
+                                <p>Attention to design details and user experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Projects Section -->
+<section class="projects" id="projects">
+    <div class="section-container">
+        <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Frontend-focused work with clean code and responsive design</p>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Project 1 - Portfolio Website -->
+            <article class="project-card">
+                <div class="project-image">
+                    <div class="project-screenshot" style="background-image: url('https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://isreal1.netlify.app/" class="project-link" aria-label="View Live Website" target="_blank" rel="noopener noreferrer">
+                                <i class='bx bx-link-external'></i>
+                                <span>Live Site</span>
+                            </a>
+                            <a href="https://github.com/Worldsfinest001/isreal" class="project-link" aria-label="View Source Code" target="_blank" rel="noopener noreferrer">
+                                <i class='bx bxl-github'></i>
+                                <span>Source</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>Personal Portfolio Website</h3>
+                        <span class="project-role">Frontend Development</span>
+                    </div>
+                    <p>A modern personal portfolio website built to present skills, projects, and experience in a clean, responsive, and visually engaging layout.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Responsive Design</span>
+                    </div>
+                    <div class="project-features">
+                        <span><i class='bx bx-check'></i> Clean Visual Hierarchy</span>
+                        <span><i class='bx bx-check'></i> Smooth Scrolling</span>
+                        <span><i class='bx bx-check'></i> Mobile-Optimized</span>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Project 2 - E-commerce -->
+            <article class="project-card">
+                <div class="project-image">
+                    <div class="project-screenshot" style="background-image: url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View Live Demo">
+                                <i class='bx bx-link-external'></i>
+                                <span>Live</span>
+                            </a>
+                            <a href="#" class="project-link" aria-label="View GitHub Repository">
+                                <i class='bx bxl-github'></i>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>Modern E-Commerce UI</h3>
+                        <span class="project-role">Frontend Implementation</span>
+                    </div>
+                    <p>A responsive e-commerce interface built with React and modern CSS. Features include product filtering, cart functionality, and smooth animations.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>CSS Grid</span>
+                        <span>Context API</span>
+                    </div>
+                    <div class="project-features">
+                        <span><i class='bx bx-check'></i> Responsive Design</span>
+                        <span><i class='bx bx-check'></i> Cart Functionality</span>
+                        <span><i class='bx bx-check'></i> Product Filtering</span>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Project 3 - Dashboard -->
+            <article class="project-card">
+                <div class="project-image">
+                    <div class="project-screenshot" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View Live Demo">
+                                <i class='bx bx-link-external'></i>
+                                <span>Live</span>
+                            </a>
+                            <a href="#" class="project-link" aria-label="View GitHub Repository">
+                                <i class='bx bxl-github'></i>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>Data Visualization Dashboard</h3>
+                        <span class="project-role">Frontend Development</span>
+                    </div>
+                    <p>Interactive dashboard with real-time charts and data visualization. Built with React, Chart.js, and custom SVG animations.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Chart.js</span>
+                        <span>SVG Animations</span>
+                    </div>
+                    <div class="project-features">
+                        <span><i class='bx bx-check'></i> Interactive Charts</span>
+                        <span><i class='bx bx-check'></i> Dark/Light Mode</span>
+                        <span><i class='bx bx-check'></i> Real-time Updates</span>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Project 4 - Task Manager -->
+            <article class="project-card">
+                <div class="project-image">
+                    <div class="project-screenshot" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View Live Demo">
+                                <i class='bx bx-link-external'></i>
+                                <span>Live</span>
+                            </a>
+                            <a href="#" class="project-link" aria-label="View GitHub Repository">
+                                <i class='bx bxl-github'></i>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>Task Management App</h3>
+                        <span class="project-role">UI/UX & Frontend</span>
+                    </div>
+                    <p>Clean task management interface with drag-and-drop functionality, local storage, and intuitive user interactions.</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Local Storage</span>
+                        <span>CSS Animations</span>
+                    </div>
+                    <div class="project-features">
+                        <span><i class='bx bx-check'></i> Drag & Drop</span>
+                        <span><i class='bx bx-check'></i> Local Storage</span>
+                        <span><i class='bx bx-check'></i> Responsive Layout</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class='bx bx-code-block'></i>
+                        </div>
+                        <h3>Core Technologies</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5 & Semantic Markup</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS3 & Modern Layouts</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript (ES6+)</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React & Hooks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class='bx bx-tools'></i>
+                        </div>
+                        <h3>Tools & Libraries</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git & GitHub</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Webpack / Vite</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Tailwind CSS</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class='bx bx-trending-up'></i>
+                        </div>
+                        <h3>Specialties</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Mobile-First Development</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Performance Optimization</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Cross-Browser Compatibility</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Accessibility (WCAG)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">My Services</h2>
+                <p class="section-subtitle">Frontend development services I offer</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class='bx bx-code-alt'></i>
+                    </div>
+                    <h3>Custom Website Development</h3>
+                    <p>Building responsive, modern websites from scratch using the latest frontend technologies and best practices.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class='bx bx-mobile-alt'></i>
+                    </div>
+                    <h3>Responsive Web Design</h3>
+                    <p>Creating websites that work perfectly on all devices, from mobile to desktop, ensuring optimal user experience.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class='bx bx-refresh'></i>
+                    </div>
+                    <h3>Website Optimization</h3>
+                    <p>Improving performance, load times, and overall user experience of existing websites through code optimization.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class='bx bx-paint'></i>
+                    </div>
+                    <h3>UI Implementation</h3>
+                    <p>Translating design files (Figma, Adobe XD) into clean, functional code with attention to detail and consistency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="section-container">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="contact-subtitle">
+                    Have a project in mind? Let's discuss how I can help bring your ideas to life with clean, modern frontend development.
+                </p>
+                
+                <div class="contact-details">
+                    <a href="mailto:oladokuntobi11@gmail.com" class="contact-item">
+                        <div class="contact-icon">
+                            <i class='bx bx-envelope'></i>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">oladokuntobi11@gmail.com</span>
+                        </div>
+                    </a>
+                    
+                    <a href="tel:+2348125241907" class="contact-item">
+                        <div class="contact-icon">
+                            <i class='bx bx-phone'></i>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value">+234 812 524 1907</span>
+                        </div>
+                    </a>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class='bx bx-map'></i>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">Based In</span>
+                            <span class="contact-value">Ibadan, Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-note">
+                    <p><i class='bx bx-time'></i> Typically respond within 4-6 hours during business days</p>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <div class="form-intro">
+                    <h3>Start a Project</h3>
+                    <p>Share details about your project and I'll get back to you with how I can help.</p>
+                </div>
+                
+                <!-- Google Forms Integration -->
+                <div class="google-form-wrapper">
+                    <div class="google-form-notice">
+                        <i class='bx bx-shield'></i>
+                        <p>Secure form powered by Google Forms. Your information is protected.</p>
+                    </div>
+                    
+                    <!-- Google Form iframe -->
+                    <div class="google-form-container">
+                        <iframe 
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdOV3PYyqtBTATCpS6Yl3a0BJ9JDMTcejNUTHWrqGpWFkCSKQ/viewform?usp=dialog" 
+                            width="100%" 
+                            height="900" 
+                            frameborder="0" 
+                            marginheight="0" 
+                            marginwidth="0"
+                            title="Contact Form"
+                            loading="lazy"
+                            style="min-height: 800px;">
+                            Loading contact form...
+                        </iframe>
+                    </div>
+                    
+                    <!-- Alternative options -->
+                    <div class="google-form-actions">
+                        <p class="form-note">Having trouble with the form above?</p>
+                        <div class="action-buttons">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOV3PYyqtBTATCpS6Yl3a0BJ9JDMTcejNUTHWrqGpWFkCSKQ/viewform?usp=dialog" 
+                               class="btn btn-secondary" 
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                <span>Open in New Tab</span>
+                                <i class='bx bx-link-external'></i>
+                            </a>
+                            <a href="mailto:oladokuntobi11@gmail.com" 
+                               class="btn btn-outline">
+                                <span>Email Directly</span>
+                                <i class='bx bx-envelope'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-mark"></div>
+                    <span class="brand-text">Emmanuel Oladokun</span>
+                </div>
+                
+                <p class="footer-tagline">
+                    Frontend Developer specializing in clean, responsive web experiences
+                </p>
+                
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/emmanuel-oladokun" target="_blank" rel="noopener" class="social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/Worldsfinest001" target="_blank" rel="noopener" class="social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="mailto:oladokuntobi11@gmail.com" class="social-link">
+                        <i class='bx bx-envelope'></i>
+                    </a>
+                </div>
+                
+                <p class="footer-copyright">
+                    &copy; <span id="currentYear"></span> Emmanuel Oladokun. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class='bx bx-chevron-up'></i>
+    </button>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <div class="chatbot-identity">
+                <div class="chatbot-avatar">
+                    <div class="avatar-pulse"></div>
+                    <i class='bx bx-bot'></i>
+                </div>
+                <div class="chatbot-info">
+                    <h4>Portfolio Assistant</h4>
+                    <span class="chatbot-status">Online</span>
+                </div>
+            </div>
+            
+            <div class="chatbot-controls">
+                <button class="chatbot-minimize" id="chatbotMinimize" aria-label="Minimize chat">
+                    <i class='bx bx-minus'></i>
+                </button>
+                <button class="chatbot-close" id="chatbotClose" aria-label="Close chat">
+                    <i class='bx bx-x'></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot-message">
+                <div class="message-content">
+                    Hello! I'm here to help you learn about Emmanuel's frontend development work. You can ask me about his projects, skills, or services.
+                </div>
+            </div>
+        </div>
+        
+        <div class="chatbot-input-area">
+            <div class="quick-suggestions" id="quickSuggestions">
+                <button class="suggestion" data-question="What frontend technologies do you use?">Tech Stack</button>
+                <button class="suggestion" data-question="Can I see your projects?">View Projects</button>
+                <button class="suggestion" data-question="What services do you offer?">Services</button>
+            </div>
+            
+            <div class="chatbot-input">
+                <input type="text" 
+                       id="chatbotInput" 
+                       placeholder="Ask about my projects or experience..." 
+                       autocomplete="off" 
+                       aria-label="Chat message input">
+                <button id="chatbotSend" aria-label="Send message">
+                    <i class='bx bx-send'></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Chatbot Overlay -->
+    <div class="chatbot-overlay" id="chatbotOverlay"></div>
+    
+    <!-- Chatbot Toggle Button -->
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open chat">
+        <div class="toggle-inner">
+            <i class='bx bx-message-dots'></i>
+            <span class="notification-dot"></span>
+        </div>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
